@@ -5,10 +5,16 @@ import Router from 'vue-router'
 Vue.use(Router)
 const route = [
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     // component: home
     component: () => import('../view/TheHome.vue')
+  },
+  {
+    path: '/',
+    name: 'img-size',
+    // component: home
+    component: () => import('../view/ImageSize.vue')
   }
 ]
 
